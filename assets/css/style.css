@@ -48,6 +48,20 @@ main {
     flex: 1 0 auto;
 }
 
+#menu{
+    text-size-adjust: 100%;
+    letter-spacing: 4px;
+    list-style: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active{
+    border-bottom: 1px solid #3a3a3a;
+}
+
 /* Footer */
 footer {
     background-color: orange;
