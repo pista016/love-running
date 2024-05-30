@@ -49,7 +49,7 @@ h1 {
     list-style-type: none;
 }
 
-#menu>li {
+#menu > li {
     margin-bottom: 1em;
 }
 
@@ -84,10 +84,16 @@ nav {
 
 /* Main content */
 main {
-    background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/* Hero section */
+#hero {
+    height: 700px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /* Footer */
@@ -99,17 +105,16 @@ main {
     list-style-type: none;
 }
 
-#social-networks i{
+#social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 }
-    
 
 /* Media query: tablets and larger (768px and up) */
-@media  screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     /* Header */
-    nav{
+    nav {
         display: block;
         position: relative;
         box-shadow: none;
@@ -117,36 +122,34 @@ main {
         padding-right: 1rem;
     }
 
-    #menu{
+    #menu {
         display: flex;
     }
 
-    #menu > li{
+    #menu > li {
         padding-left: 1rem;
     }
 
-    .nav-toggle-label{
+    .nav-toggle-label {
         display: none;
     }
 
-    #logo{
+    #logo {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
 
     /* Main content */
-    main{
-    /* Main content down to accommodate larger header */
-    margin-top: 79px;
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
     }
-
 }
 
-/* Large devices (laptops and desktops) */
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
-    
 }
